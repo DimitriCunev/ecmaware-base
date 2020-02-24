@@ -3,6 +3,8 @@ CSGO Node JS Hack.
 
 Use for educational purpose only.
 
+> Using this in competitive matchmaking is un-professional and will result in a VAC ban.
+
 CS:GO Hack made in NodeJS using memoryjs (21.01.2020).
 
 Features:
