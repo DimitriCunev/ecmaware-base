@@ -1,11 +1,15 @@
 # ecmaware-base
 CSGO Node JS Hack.
 
+![img](https://i.imgur.com/xwcVGEM.png)
 Use for educational purpose only.
 
 > Using this in competitive matchmaking is un-professional and will result in a VAC ban.
 
-CS:GO Hack made in NodeJS using memoryjs (21.01.2020).
+> Updated July 2020
+
+* Added GUI and improved some stuff.
+
 
 Features:
 - Aim Helper ( not quaternion based )
