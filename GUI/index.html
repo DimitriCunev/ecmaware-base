@@ -1,0 +1,170 @@
+<html>
+    <head>
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/lux/bootstrap.min.css" integrity="sha384-smnSwzHqW1zKbeuSMsAM/fMQpkk7HY11LuHiwT8snL/W2QBoZtVCT4H5x1CEcJCs" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css"/> <!-- 'nano' theme -->
+        <link rel="stylesheet" href="style.css">
+        <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="ml-5 mt-5 mr-5">
+            <div class = "logo"></div>
+            <hr>
+
+            <div class="row w-50">
+                <div class="col-3">
+                  <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active mb-2" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Style</a>
+                    <a class="nav-link mb-2" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Aimbot</a>
+                    <a class="nav-link mb-2" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Wallhack</a>
+                    <a class="nav-link mb-2" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Misc</a>
+                    <!-- <a class="nav-link mb-2" id="v-pills-premium-tab" data-toggle="pill" href="#v-pills-premium" role="tab" aria-controls="v-pills-premium" aria-selected="false">Premium</a> -->
+                  </div>
+                </div>
+                <div class="col-9">
+                  <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                        <h1>Style & Visuals</h1>
+                        <br>
+                        
+                        <h3>Interface colors</h3>
+                        <div class="row">
+                            <div class="col">Background</div>
+                            <div class="col"><p class ='colp' id="col1"></div>
+                            <div class="w-100 mt-2"></div>
+                            
+                            <div class="col">Text color</div>
+                            <div class="col"><p class ='colp' id="col2"></div>
+                            <div class="w-100 mt-2"></div>
+
+                            <div class="col">Buttons</div>
+                            <div class="col"><p class ='colp' id="col3"></div>
+                            <div class="w-100 mt-2"></div>
+
+                        </div>
+                        <h3>Wallhack</h3>
+                        <div class="row">
+                            <div class="col">Allies</div>
+                            <div class="col"><p class ='colp' id="col4"></div>
+                            <div class="w-100 mt-2"></div>
+                            
+                            <div class="col">Enemies</div>
+                            <div class="col"><p class ='colp' id="col5"></div>
+                            <div class="w-100 mt-2"></div>
+                        </div>
+                        <h3>Charms</h3>
+                        <div class="row">
+                            <div class="col">Enemies hidden</div>
+                            <div class="col"><p class ='colp' id="col6"></div>
+                            <div class="w-100 mt-2"></div>
+                            
+                            <div class="col">Enemies</div>
+                            <div class="col"><p class ='colp' id="col7"></div>
+                            <div class="w-100 mt-2"></div>
+                        </div>
+
+
+
+                        
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                        <h1>Aimbot</h1>
+                        <br>
+                        <h3>Settings</h3>
+                        <div class="custom-control custom-switch">
+                            <input checked type="checkbox" class="custom-control-input" id="customSwitches">
+                            <label class="custom-control-label" for="customSwitches">Enabled</label>
+                        </div>
+                        <br>
+                        <span>X-AXIS Smooth</span>
+                        <div class="form-group w-25">
+                            <input type="range" min="1" max="100" value="50" class="slider" >
+                        </div>
+                        <span>Y-AXIS Smooth</span>
+                        <div class="form-group w-25">
+                            <input type="range" min="1" max="100" value="50" class="slider" >
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                        <h1>Wallhack</h1>
+                        <br>
+                        <h3>ESP</h3>
+                        <div class="custom-control custom-switch">
+                            <input checked type="checkbox" class="custom-control-input" id="customSwitches4">
+                            <label class="custom-control-label" for="customSwitches4">Enabled</label>
+                        </div>
+                        <br>
+                        <h3>Charms</h3>
+                        <div class="custom-control custom-switch">
+                            <input disabled  type="checkbox" class="custom-control-input" id="customSwitches5">
+                            <label class="custom-control-label" for="customSwitches5">Enabled</label>
+                        </div>
+                        <br>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                        <h1>Misc</h1>
+                        <br>
+                        <h3>Bunnyhop</h3>
+                        <div class="custom-control custom-switch">
+                            <input disabled  type="checkbox" class="custom-control-input" id="customSwitches3">
+                            <label disabled class="custom-control-label" for="customSwitches3">Enabled</label>
+                        </div>
+                        <br>
+                        <h3>Recoil Control</h3>
+                        <div class="custom-control custom-switch">
+                            <input disabled  type="checkbox" class="custom-control-input" id="customSwitches2">
+                            <label class="custom-control-label" for="customSwitches2">Enabled</label>
+                        </div>
+                        <br>
+                        <h3>TriggerBot</h3>
+                        <div class="custom-control custom-switch">
+                            <input disabled  type="checkbox" class="custom-control-input" id="customSwitches1">
+                            <label class="custom-control-label" for="customSwitches1">Enabled</label>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-premium" role="tabpanel" aria-labelledby="v-pills-premium-tab">
+                        <h1>Premium</h1>
+                        <br>
+                        <h2>For only 0.99$ forever</h2>
+                        <br>
+                        <ul class="list-group">
+                            <li class="list-group-item active">What you get</li>
+                            <li class="list-group-item">Undetectable Private Version</li>
+                            <li class="list-group-item">Charms</li>
+                            <li class="list-group-item">Bunnyhop</li>
+                            <li class="list-group-item">Triggerbot</li>
+                            <li class="list-group-item">Recoil Control</li>
+                        </ul>
+                        <br>
+                        <button disabled type="button" class="btn btn-primary w-50">Buy now! (unavailable)</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+        </div>
+        
+
+
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <!-- One of the following themes -->
+       
+       
+        
+        <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+        <!-- Modern or es5 bundle -->
+        <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.es5.min.js"></script>
+        <script src="socket.io-client.js"></script>
+        <script src="logic.js"></script>
+        
+    </body>
+</html>

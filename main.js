@@ -10,10 +10,9 @@ let offsets = null;
 function openGame(){
   try {
     csgoProcess = memoryjs.openProcess('csgo.exe');
-    clientPanoramaDll = memoryjs.findModule("client_panorama.dll", csgoProcess.th32ProcessID);
+    clientPanoramaDll = memoryjs.findModule("client.dll", csgoProcess.th32ProcessID);
     engineDll = memoryjs.findModule("engine.dll", csgoProcess.th32ProcessID);
-    console.log('Opened CS:GO process');
-    
+    console.log('Opened CS:GO process');    
   } catch (error) {
     console.log(`Couldn't find CS:GO process`)
   }

@@ -4,9 +4,14 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "asynckeystate": "0.0.5",
     "colors": "^1.4.0",
+    "express": "^4.17.1",
     "ffi": "^2.3.0",
     "memoryjs": "^3.2.3",
+    "request-promise": "^4.2.5",
+    "socket.io": "^2.3.0",
+    "socket.io-client": "^2.3.0",
     "util": "^0.12.1"
   },
   "devDependencies": {

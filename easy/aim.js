@@ -5,7 +5,7 @@ const control = require('../code/control');
 const keyboard = require("asynckeystate");
 let AimClass = {}
 
-AimClass.update = ()=>{  
+AimClass.update = (data)=>{  
     // console.log('ya');
 
     let me = players.me()
@@ -36,8 +36,8 @@ AimClass.update = ()=>{
         }
         if(other.x!=0){
             // console.log('ye');
-            if(angleX) state.viewAnglesX = math.angleLerp(state.viewAnglesX, -angleX+90 ,1)
-            if(angleY) state.viewAnglesY = math.angleLerp(state.viewAnglesY, -angleY ,1)   
+            if(angleX) state.viewAnglesX = math.angleLerp(state.viewAnglesX, -angleX+90 ,data.smoothX)
+            if(angleY) state.viewAnglesY = math.angleLerp(state.viewAnglesY, -angleY ,data.smoothY)   
         }
         
     }
